@@ -4,7 +4,7 @@
 #
 Name     : perl-List-UtilsBy
 Version  : 0.10
-Release  : 3
+Release  : 4
 URL      : http://search.cpan.org/CPAN/authors/id/P/PE/PEVANS/List-UtilsBy-0.10.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/P/PE/PEVANS/List-UtilsBy-0.10.tar.gz
 Summary  : 'higher-order list utility functions'
@@ -63,7 +63,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.0/List/UtilsBy.pm
+/usr/lib/perl5/site_perl/5.26.1/List/UtilsBy.pm
 
 %files doc
 %defattr(-,root,root,-)
