@@ -4,10 +4,10 @@
 #
 Name     : perl-List-UtilsBy
 Version  : 0.11
-Release  : 16
+Release  : 17
 URL      : http://search.cpan.org/CPAN/authors/id/P/PE/PEVANS/List-UtilsBy-0.11.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/P/PE/PEVANS/List-UtilsBy-0.11.tar.gz
-Summary  : 'higher-order list utility functions'
+Summary  : Higher-order list utility functions
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-List-UtilsBy-license = %{version}-%{release}
@@ -28,6 +28,7 @@ my $shortest_name = min_by { length } @names;
 Summary: dev components for the perl-List-UtilsBy package.
 Group: Development
 Provides: perl-List-UtilsBy-devel = %{version}-%{release}
+Requires: perl-List-UtilsBy = %{version}-%{release}
 
 %description dev
 dev components for the perl-List-UtilsBy package.
