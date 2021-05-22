@@ -4,7 +4,7 @@
 #
 Name     : perl-List-UtilsBy
 Version  : 0.11
-Release  : 23
+Release  : 24
 URL      : http://search.cpan.org/CPAN/authors/id/P/PE/PEVANS/List-UtilsBy-0.11.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/P/PE/PEVANS/List-UtilsBy-0.11.tar.gz
 Summary  : 'higher-order list utility functions'
