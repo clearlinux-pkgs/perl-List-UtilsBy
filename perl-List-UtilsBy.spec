@@ -4,12 +4,13 @@
 #
 Name     : perl-List-UtilsBy
 Version  : 0.12
-Release  : 28
+Release  : 29
 URL      : https://cpan.metacpan.org/authors/id/P/PE/PEVANS/List-UtilsBy-0.12.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/P/PE/PEVANS/List-UtilsBy-0.12.tar.gz
 Summary  : 'higher-order list utility functions'
 Group    : Development/Tools
-License  : Artistic-1.0-Perl
+License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
+Requires: perl-List-UtilsBy-license = %{version}-%{release}
 Requires: perl-List-UtilsBy-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 
@@ -32,6 +33,14 @@ Requires: perl-List-UtilsBy = %{version}-%{release}
 
 %description dev
 dev components for the perl-List-UtilsBy package.
+
+
+%package license
+Summary: license components for the perl-List-UtilsBy package.
+Group: Default
+
+%description license
+license components for the perl-List-UtilsBy package.
 
 
 %package perl
@@ -69,6 +78,8 @@ make TEST_VERBOSE=1 test
 
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/perl-List-UtilsBy
+cp %{_builddir}/List-UtilsBy-0.12/LICENSE %{buildroot}/usr/share/package-licenses/perl-List-UtilsBy/1a0db8ae53618717535b6c54006100fc3e919f87
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -86,6 +97,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %defattr(-,root,root,-)
 /usr/share/man/man3/List::UtilsBy.3
 
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-List-UtilsBy/1a0db8ae53618717535b6c54006100fc3e919f87
+
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/List/UtilsBy.pm
+/usr/lib/perl5/*
