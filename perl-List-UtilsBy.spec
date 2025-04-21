@@ -7,7 +7,7 @@
 #
 Name     : perl-List-UtilsBy
 Version  : 0.12
-Release  : 38
+Release  : 39
 URL      : https://cpan.metacpan.org/authors/id/P/PE/PEVANS/List-UtilsBy-0.12.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/P/PE/PEVANS/List-UtilsBy-0.12.tar.gz
 Summary  : 'higher-order list utility functions'
